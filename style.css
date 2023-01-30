@@ -1,0 +1,97 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;500;700&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: steelblue;
+    color: #fff;
+}
+
+.container {
+    background-color: rgba(0, 0, 0, 0.4);
+    padding: 1.5rem 2.5rem;
+    border-radius: 0.25rem;
+}
+
+.container h1 {
+    text-align: center;
+    margin-bottom: 1.5rem;
+}
+
+.container a {
+    text-decoration: none;
+    color: lightblue;
+}
+
+.form-control {
+    position: relative;
+    margin: 1.25rem 0 2.5rem;
+    width: 300px;
+}
+
+.form-control input {
+    background-color: transparent;
+    border: 0;
+    border-bottom: 2px #fff solid;
+    display: block;
+    width: 100%;
+    padding: 1rem 0;
+    font-size: 1.1rem;
+    color: #fff;
+}
+
+.form-control input:focus,
+.form-control input:valid {
+    outline: none;
+    border-bottom-color: lightblue;
+}
+
+.btn {
+    cursor: pointer;
+    display: inline-block;
+    width: 100%;
+    background-color: lightblue;
+    border: 0;
+    padding: 1rem;
+}
+
+.text .btn:focus {
+    outline: 0;
+}
+
+.btn:active {
+    transform: scale(.98);
+}
+
+.text {
+    margin-top: 1.5rem;
+}
+
+.form-control label {
+    position: absolute;
+    top: 1rem;
+    left: 0;
+}
+
+.form-control label span {
+    display: inline-block;
+    font-size: 1.125rem;
+    min-width: 5px;
+    transition: 0.3s cubic-bezier(0.68, -0.55, 0.265, 1.55);
+}
+
+.form-control input:focus+label span,
+.form-control input:valid+label span {
+    color: lightblue;
+    transform: translateY(-2rem);
+}
